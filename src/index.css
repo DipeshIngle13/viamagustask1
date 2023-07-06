@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.custom-background {
+  background: transparent url("./assets/Rectangle\ 1.png") 0% 0% no-repeat
+    padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 16.4375rem;
+}
+.custom-card {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+  opacity: 1;
+
+  width: 36.0625rem;
+  height: 42.9375rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.custom-header {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 7px #00000029;
+  border-radius: 6px 6px 0px 0px;
+  opacity: 1;
+  width: 100%;
+  height: 3.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.amazon-logo {
+  width: 7.5rem;
+  height: 7.5rem;
+  opacity: 1;
+  margin-top: 0.3125rem;
+}
+.tree-logo {
+  width: 24.0625rem;
+  height: 8rem;
+  opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+  .custom-card {
+    width: 22.0625rem;
+    
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
